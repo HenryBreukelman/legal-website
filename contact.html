@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Evan Kennedy Henry Breukelman">
+    <meta name="description" content="Final Web Assignment">
+    <meta name="keywords" content="html, css, web, web development, javascript">
+    <title>Final Web Assignment</title>
+    <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+    <link rel="stylesheet" href="./assets/style/contact.css" media="all">
+  </head>  
+  <body>
+    <header>
+      <div class="container flex space-between">
+        <h1><a href="./index.html">Swift Legal</a></h1>                    
+        <nav>
+          <ul class="flex gap-20">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </nav>
+        <i class="hamburger fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <!-- Hero banner -->
+      <section class="contact-banner">
+        <div class="contact-banner-text">
+          <h2>Contact</h2>
+        </div>
+      </section>
+      <!-- Form and image-->
+      <section>
+        <div class="container">
+          <div class="form-and-image flex">
+            <div class="contact-form">
+              <h3>Send us a message</h3>
+              <form method="post" name="registration">
+                <div class="flex space-between mb-20">
+                  <input class="small-input shadow" type="text" name="name" placeholder="Full Name (required)" required>
+                  <input class="small-input shadow" type="tel" name="phone" placeholder="Phone (required)" required>
+                </div>
+                <div class="flex space-between mb-20">
+                  <input class="small-input shadow" type="email" name="email" placeholder="Email (required)" required>
+                  <input class="small-input shadow" type="text" name="subject" placeholder="Subject (required)" required>
+                </div>
+                <div class="mb-20">
+                  <textarea class="big-input shadow" name="textbox" placeholder="Your message (required)" required></textarea>
+                </div>
+                <div class="button">
+                  <input class="shadow" type="button" value="Submit">
+                </div>
+              </form>
+            </div>
+            <aside>
+              <figure>
+                <img 
+                  class="border-6 shadow" src="./assets/media/phone-contact.jpg" 
+                  alt="Person holding a phone, representing contact information"
+                >
+              </figure>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <!-- Contact information -->
+      <section>
+        <div class="container">
+          <div class="contact-info flex gap-20">
+            <div class="card flex shadow">
+              <i class="card-icon fa-regular fa-envelope"></i>
+              <p>contact@swiftlegal.com</p>
+            </div>
+            <div class="card flex shadow">
+              <i class="card-icon fa-solid fa-phone"></i>
+              <p>1.800.123.4567</p>
+            </div>
+            <div class="card flex shadow">
+              <i class="card-icon fa-solid fa-location-dot"></i>
+              <p>Winnipeg, MB</p>
+            </div>
+            <div class="card flex shadow">
+              <i class="card-icon fa-solid fa-fax"></i>
+              <p>(204) 123.4567</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about center">
+        <div class="container center">
+          <h3>About Us</h3>
+          <p>
+            At Swift Legal, we are dedicated to providing efficient and effective
+            legal solutions tailored to meet the unique needs of our clients.
+          </p>
+          <nav>
+            <div class="button shadow flex">
+              <a href="./about.html">Learn More</a>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container flex space-between">
+        <div class="list flex center">
+          <ul class="flex gap-20">
+            <a href="#">
+              <li><i class="fa-brands fa-twitter" alt="twitter icon"></i></li>
+            </a>
+            <a href="#">
+              <li><i class="fa-brands fa-instagram" alt="Instagram icon"></i></li>
+            </a>
+            <a href="#">
+              <li><i class="fa-brands fa-youtube" alt="YouTube icon"></i></li>
+            </a>
+          </ul>
+        </div>
+        <p>&copy;2024 Evan & Henry</p> 
+      </div> 
+    </footer>
+  </body>
+</html>
